@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./style.css";
-import image1 from "./1.png";
+import image1 from "./image1.jpg";
 
 const App = () => {
   const canvasRef = useRef(null);
@@ -49,7 +49,8 @@ const App = () => {
     canvas.height = 600;
     // canvas.style.width = `${window.innerWidth}px`;
     // canvas.style.height = `${window.innerHeight}px`;
-    canvas.style.border = "2px solid black";
+    canvas.style.backgroundColor = "rgb(224, 224, 224)";
+    canvas.style.borderRadius="20px";
 
     //Draw
     const context = canvas.getContext("2d");
